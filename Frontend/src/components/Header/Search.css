@@ -1,0 +1,32 @@
+.SearchContainer {
+    background: #fff;
+    width: 38%;
+    border-radius: 2px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.InputSearchbase {
+    padding-left: 20px;
+    width: 100%;
+}
+
+.SearchIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    padding: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .SearchContainer {
+        width: 80%;
+        margin-left: 10px;
+    }
+    .InputSearchbase {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+}

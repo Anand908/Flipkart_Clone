@@ -1,0 +1,84 @@
+.LoginContainer {
+    position: relative;
+    width: 675px;
+    height: 528px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.LoginContainer .imageContainer {
+    position: relative;
+    width: 100%;
+    background: #2874f0 url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png) center 85% no-repeat;
+    box-sizing: border-box;
+    padding: 40px 33px;
+}
+.imageContainer > h5 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #FFF;
+    margin: 10px 0;
+}
+.imageContainer > p {
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 150%;
+    color: #dbdbdb;
+}
+.LoginContainer .formContainer {
+    position: relative;
+    background-color: #fff;
+    padding: 56px 35px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.formContainer>form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formContainer > form > p{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+}
+.formContainer > form >p > span {
+    color: #2874f0;
+}
+.formContainer > form > span {
+    display: flex;
+    justify-content: center;
+}
+.formContainer .newaccount {
+    position: absolute;
+    bottom: 32px;
+    align-items: center;
+    color: #2874f0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.formContainer > form > .inputField {
+    width: 100%;
+    font-size: inherit;
+}
+.formContainer>form>h5 {
+    font-size: 10px;
+    color: #ff6161;
+    line-height: 0;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .LoginContainer {
+        width: 300px;
+        grid-template-columns: 1fr;
+    }
+    .LoginContainer .imageContainer {
+        display: none;
+    }
+}
