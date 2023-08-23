@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 export const Connection = async( URL ) =>
 {
     try {
+        mongoose.set('strictQuery', false);
         await mongoose.connect(URL, {useUnifiedTopology: true, useNewUrlParser: true});
         console.log("Database Connected Successfully :)");
     }
