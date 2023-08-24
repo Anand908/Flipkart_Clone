@@ -47,12 +47,13 @@ const LeftContainer = styled(Grid)(({theme}) => ({
 const Cart = () => {
     
     const buyNow = async () => {
-        let response = await payUsingPaytm({amount: 500, email: 'anandk212307@gmail.com'})
-        let information = {
-            action:'https://securegw-stage.paytm.in/order/proccess',
-            params: response
-        }
-        post(information);
+        alert("Place Order will be available soon.");
+        // let response = await payUsingPaytm({amount: 500, email: 'anandk212307@gmail.com'})
+        // let information = {
+        //     action:'https://securegw-stage.paytm.in/order/proccess',
+        //     params: response
+        // }
+        // post(information);
     }
 
     const { cartItems } = useSelector(state => state.cart);
